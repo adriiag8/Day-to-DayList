@@ -17,6 +17,16 @@ header {
   margin: 3rem;
 }
 
+#cerrarSesion a {
+  text-decoration: none;
+  color: #084c94;
+  
+}
+
+#link:hover {
+  color: #860606;
+}
+
 header button {
   width: fit-content;
   display: flex;

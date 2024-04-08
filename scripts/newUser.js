@@ -1,4 +1,6 @@
 const submit = document.getElementById("submit");
+const name = document.getElementById("nombre");
+const apellido = document.getElementById("apellido");
 const username = document.getElementById("username");
 const password = document.getElementById("password");
 const visible = document.getElementById("visible");
@@ -13,9 +15,10 @@ document.addEventListener("change", (e) => {
 
 document.addEventListener("click", (e) => {
     if (e.target === submit) {
-        if (password.value !== "" && username.value !== "") {
+        if (password.value !== "" && username.value !== "" && name.value !== "" && apellido.value !== "") {
             e.preventDefault();
-            window.location.href = "/pages/main.html";
+            alert("La cuenta ha sido creada con éxito");
+            window.location.href = "/index.html";
         }
     }
 })

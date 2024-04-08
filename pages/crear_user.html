@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="/css/login.css">
+    <title>Nuevo Usuario</title>
+    <link rel="stylesheet" href="/css/new_user.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap"
@@ -15,10 +15,22 @@
 
 <body>
     <header>
-        <h1>Day to Day List</h1>
+        <h1><a href="/index.html">Day to Day List</a></h1>
     </header>
-
+    <section>
+        <h2>Registrate en la web</h2>
+    </section>
     <form id="form">
+        <label for="name">
+            Nombre:
+        </label>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+        <label for="apellido">
+            Apellido:
+        </label>
+        <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="correo electrónico" required>
         <label for="username">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24"
                 viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
@@ -46,14 +58,10 @@
             <input type="checkbox" id="visible">
             <label for="visible">Mostrar Contraseña</label>
         </div>
-        <button type="submit" id="submit">Iniciar Sesion</button>
-        <a id="link_newUser" href="/pages/crear_user.html" id="new_user">Crear Usuario <svg
-                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4" id="flecha">
-                <path fill-rule="evenodd"
-                    d="M2 8a.75.75 0 0 1 .75-.75h8.69L8.22 4.03a.75.75 0 0 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 0 1-1.06-1.06l3.22-3.22H2.75A.75.75 0 0 1 2 8Z"
-                    clip-rule="evenodd" />
-            </svg>
-        </a>
+        <div class="botones">
+            <button type="submit" id="submit">Enviar</button>
+            <button type="reset" id="reset">Borrar</button>
+        </div>
     </form>
     <footer>
         Hecho por Adrian Aguilar, con la finalidad de aprender y practicar el desarrollo web.
@@ -62,7 +70,7 @@
             document.write(year);
         </script>
     </footer>
-    <script src="/scripts/login.js"></script>
+    <script src="/scripts/newUser.js"></script>
 </body>
 
 </html>
